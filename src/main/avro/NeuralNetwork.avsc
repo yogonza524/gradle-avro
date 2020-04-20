@@ -1,0 +1,32 @@
+{
+    "name" : "NeuralNetwork",
+    "namespace" : "com.rna.domain",
+    "type" : "record",
+    "fields" : [
+        {
+            "name" : "funcion",
+            "type" : {
+                "name" : "Function",
+                "type" : "enum",
+                "symbols" : [
+                    "SIGMOID", "HIPERBOLIC"
+                ]
+            }
+        },
+        {
+            "name" : "inputs",
+            "type" : "int",
+            "default" : 1
+        },
+        {
+            "name" : "outputs",
+            "type" : "int",
+            "default" : 1
+        },
+        {
+            "name" : "hiddenLayers",
+            "type" : "int",
+            "default" : 1
+        }
+    ]
+}
